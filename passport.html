@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM, JS. Reading information from DOM</title>
+</head>
+<body>
+    <h1>Мой паспорт</h1>
+    <div id="page">
+        <p>Фамилия: <span id="lastName">Иванов</span></p>
+        <p>Имя: <span id="firstName">Иван</span></p>
+        <p>Год рождения: <span id="birthYear">1990</span></p>
+    </div>
+
+    <script>
+        var lastName = document.getElementById('lastName').innerText;
+        var firstName = document.getElementById('firstName').innerText;
+        var birthYear = document.getElementById('birthYear').innerText;
+
+        console.log('Фамилия: ' + lastName);
+        console.log('Имя: ' + firstName);
+        console.log('Год рождения: ' + birthYear);
+    </script>
+</body>
+</html>
